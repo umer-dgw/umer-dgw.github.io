@@ -3,44 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, h1, h2, p {
             margin: 0;
             padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .home-section {
+            text-align: center;
+            padding: 100px;
             background-color: #f4f4f4;
         }
-        header {
-            background-color: #35424a;
-            color: white;
+
+        .footer {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 1rem;
-        }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #35424a;
-            color: white;
+            padding: 10px;
         }
     </style>
+    <title>Retro Website</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Website</h1>
+    <header class="header">
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <h2>About Us</h2>
-        <p>This is a simple website created using HTML and Deployed Via Pages.git.hub.</p>
-    </div>
-    <footer>
-        <p>&copy; 2023 My Simple Website. All rights reserved.</p>
+
+    <section class="home-section">
+        <h1>Welcome to Retro Website</h1>
+        <p>Experience the nostalgia of the past.</p>
+    </section>
+
+    <footer class="footer">
+        &copy; 2023 Retro Website. All rights reserved.
     </footer>
 </body>
 </html>
-
