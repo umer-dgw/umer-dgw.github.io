@@ -3,38 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Your website description here">
-  <meta name="keywords" content="your, keywords, here">
   <title>Retro Style Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <style>
+    /* Global styling */
     body {
       font-family: 'Lucida Console', monospace;
       font-kerning: none;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
     }
-    /* Add more styles here */
+    /* Navigation bar and header */
+    .navbar {
+      background-color: #FF5733;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .header {
+      background-color: #F5F5F5;
+      text-align: center;
+      padding: 100px 0;
+    }
+    /* Form styling */
+    .contact-form {
+      padding: 50px 0;
+    }
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
   </style>
 </head>
 <body>
-  <nav>
-    <!-- Navigation bar with About Us, Contact Us, Blogs -->
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Retro Style</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogs">Blogs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
   
-  <header>
-    <!-- Short description about the website -->
-  </header>
-  
-  <main>
-    <!-- 10 Blogs posts -->
-  </main>
-  
-  <footer>
-    <!-- Footer with About Us, Contact Us, Blogs, and Contact Form -->
+  <!-- Header section -->
+  <section class="header">
+    <h1>Welcome to Retro Style!</h1>
+    <p>Experience the nostalgia of the past with our retro-themed website.</p>
+  </section>
+
+  <!-- About Us section -->
+  <section id="about" class="container">
+    <h2>About Us</h2>
+    <p>This is a retro-themed website that takes you back to the technology of the past.</p>
+  </section>
+
+  <!-- Contact Us section -->
+  <section id="contact" class="contact-form">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <!-- Form fields here -->
+      </form>
+    </div>
+  </section>
+
+  <!-- Blogs section -->
+  <section id="blogs" class="container">
+    <h2>Blogs</h2>
+    <!-- Blog posts here -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Retro Style. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
